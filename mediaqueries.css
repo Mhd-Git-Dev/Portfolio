@@ -17,6 +17,10 @@
   #projects {
     height: fit-content;
   }
+  #projects .about-containers {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -52,6 +56,14 @@
   .about-containers {
     margin-top: 0;
   }
+  #projects .about-containers {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin: 1rem auto;
+  }
+  .project-img {
+    height: 150px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -74,6 +86,13 @@
   .contact-info-upper-container,
   .btn-container {
     flex-wrap: wrap;
+  }
+  #projects .about-containers {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .project-img {
+    height: 180px;
   }
   .contact-info-container {
     margin: 0;

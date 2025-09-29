@@ -276,6 +276,16 @@ section {
   gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Projects specific layout */
+#projects .about-containers {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 2rem auto;
 }
 
 .about-details-container {
@@ -439,17 +449,25 @@ article .icon {
 
 #projects {
   position: relative;
+  min-height: 70vh;
+  padding: 2vh 0;
 }
 
 .color-container {
   border-color: rgb(163, 163, 163);
   background: rgb(250, 250, 250);
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .project-img {
   border-radius: 2rem;
   width: 90%;
-  height: 90%;
+  height: 200px;
+  object-fit: cover;
+  margin: 0 auto;
 }
 
 .project-title {
